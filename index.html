@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Motorway Rescue & Assistance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>🚘 Motorway Rescue</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#request">Get Assistance</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tag">AI-POWERED ROADSIDE SUPPORT</p>
+            <h1>Help Is Just One Click Away.</h1>
+            <p>Fast, reliable motorway rescue and roadside assistance
+               when you need it most.</p>
+            <a href="#request" class="btn">Request Assistance</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Rescue Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>🚗 Vehicle Breakdown</h3>
+                <p>Get help when your vehicle stops working.</p>
+            </div>
+            <div class="card">
+                <h3>🛞 Flat Tyre</h3>
+                <p>Request roadside tyre assistance.</p>
+            </div>
+            <div class="card">
+                <h3>⛽ Fuel Assistance</h3>
+                <p>Get help when you run out of fuel.</p>
+            </div>
+            <div class="card">
+                <h3>🚑 Accident Emergency</h3>
+                <p>Report an accident and request assistance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="request" class="request">
+        <h2>Request Rescue Assistance</h2>
+        <form id="rescueForm">
+            <input type="text" id="name" placeholder="Your name" required>
+
+            <select id="problem" required>
+                <option value="">Select your emergency</option>
+                <option>Vehicle Breakdown</option>
+                <option>Flat Tyre</option>
+                <option>Fuel Shortage</option>
+                <option>Accident</option>
+                <option>Other</option>
+            </select>
+
+            <input type="text" id="location" placeholder="Motorway and location" required>
+
+            <textarea id="details" placeholder="Describe your problem"></textarea>
+
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
+        <p id="message"></p>
+        <p class="note">For immediate danger, contact the relevant official emergency service.</p>
+    </section>
+
+    <footer>
+        <p>AI-Based Motorway Rescue & Assistance System | Group Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
